@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PreviewVideo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PreviewVideo
+  # 约束
+  pod "Masonry"
+  # 信号订阅功能
+  pod "ReactiveObjC"
+  # 播放webp
+  pod "YYWebImage"
+  # 播放webm
+  pod "ZFPlayer"
+  pod 'ZFPlayer/ijkplayer', '~> 4.0'
+  # 播放本地文件
+  pod "GCDWebServer/WebDAV"
+
+  target 'PreviewVideoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PreviewVideoUITests' do
+    # Pods for testing
+  end
+
+end
